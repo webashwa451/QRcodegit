@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE generatore</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <section class="upper">
+            <h1>QR code generatore</h1>
+            <p>Paste text to creat QR Code</p>
+           </section>
+
+           <form id="qrform">
+            <input id="qrInputTextEl" type="text" name="qrText" placeholder="Enter Text"/>
+            <button  id="generateBtn" type="submit">Generatore QR code</button>
+           </form>
+           <section id = "qrcontainerEl"  class="qr_container">
+            <img id = "qrimage" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" alt="QR code"/>
+           </section>
+        </div>
+
+    </div>
+</body>
+</html>
